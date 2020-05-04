@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Unit Converter!
+    </title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>WEIGHT CONVERTER</h1>
+        <div class="section">
+            <p><a href="index.html">HomePage</a></p>
+            <ol>
+                <li><a href="temperature.html">Fahrenheits to Celsius</a></li>
+                <li><a href="length.html">Meters to Feet</a></li>
+                <li><a href="time.html">Hours to Minutes</a></li>
+            </ol>
+        </div>
+        <div class="btnDiv">
+        <button id="btn">Click To Convert!</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        var button;
+        button = document.getElementById("btn");
+button.addEventListener("click", function(){
+ var kilograms;
+ var pounds;
+ kilograms = prompt("Enter Kilograms..");
+ pounds = kilograms * 2.205;
+ alert("It is " + pounds +
+ " Pounds.\n\n Pound is an imperial unit of mass or weight measure while kilogram is a metric unit of measurement of the SI units today (the modern metric system of units) are the most widely used in science, commerce, and everyday life. It is worth noting, however, that some countries like the U.S. and U.K. are embracing the pound as their standard unit of measuring mass."
+ );
+
+});
+       
+    </script>
+
+</body>
+
+</html>

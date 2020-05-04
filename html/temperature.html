@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Unit Converter!
+    </title>
+            <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body>
+    <div class = "container">
+    <h1>TEMPERATURE CONVERTER</h1>
+    <div class="section">
+        <p><a href="index.html">HomePage</a></p>
+            <ol>
+                <li><a href="weight.html">Kilograms to Pounds</a></li>
+                <li><a href="length.html">Meters to Feet</a></li>
+                <li><a href="time.html">Hours to Minutes</a></li>
+            </ol>
+        </div>
+        <div class="btnDiv">
+            <button id="btn">Click To Convert!</button>
+        </div>
+     </div>
+    <script type = "text/javascript">
+    var button;
+    button = document.getElementById("btn");
+    button.addEventListener("click", function(){
+
+        var f = prompt("Enter Fahrenheit");
+        var c = (f - 32) * 5 / 9;
+        alert("It is " + c + " Celcius.\n\nThe Celsius temperature range was originally defined by setting zero as the temperature at which water froze.");
+    });
+    </script>
+
+</body>
+
+</html>
